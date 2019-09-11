@@ -1,3 +1,5 @@
+*This fork includes glibc next to the default musl-libc, for compatiblity with asdf-nodejs versions.*
+
 This docker container should work out of the box but I built it for use on circleci.
 
 I've included two utility binaries;
@@ -18,7 +20,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: lisinge/asdf:latest
+      - image: defactosoftware/asdf:latest
         environment:
           BASH_ENV: "~/.bashrc" # IMPORTANT!
 ```
