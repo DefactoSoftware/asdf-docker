@@ -1,6 +1,6 @@
-FROM heroku/heroku:20
+FROM heroku/heroku:24
 
-ENV DOCKERIZE_VERSION v0.6.1
+ENV DOCKERIZE_VERSION v0.8.0
 
 RUN apt-get update -q && apt-get install -y git curl build-essential libssl-dev automake autoconf libncurses-dev
 
